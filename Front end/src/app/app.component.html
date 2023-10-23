@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* styles.css */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .player-form {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      display: inline-block;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    select {
+      margin: 5px 0;
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: skyblue;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: orange;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Player Management project</h1>
+
+  <div class="player-form">
+    <h2>Add Player</h2>
+    <form>
+      <input type="text" placeholder="Player Name" id="playerName">
+      <button onclick="addPlayer()">Add</button>
+    </form>
+  </div>
+
+  <div class="player-form">
+    <h2>Update Player</h2>
+    <form>
+      <select id="selectPlayer">
+        <option value="1">Player 1</option>
+        <option value="2">Player 2</option>
+        <option value="3">Player 3</option>
+        <option value="4">Player 4</option>
+        <option value="5">Player 5</option>
+      </select>
+      <input type="text" placeholder="New Player Name" id="newPlayerName">
+      <button onclick="updatePlayer()">Update</button>
+    </form>
+  </div>
+
+  <div class="player-form">
+    <h2>Delete Player</h2>
+    <form>
+      <select id="deletePlayer">
+        <option value="1">Player 1</option>
+        <option value="2">Player 2</option>
+        <option value="3">Player 3</option>
+      </select>
+      <button onclick="deletePlayer()">Delete</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
